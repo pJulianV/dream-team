@@ -1,7 +1,7 @@
 package view;
 
 import Controller.apiController;
-import Controller.DBController;
+import Controller.dbController;
 import Model.dbModel;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -95,7 +95,7 @@ public class apiFilter {
 
                 try {
                     Connection conn = db.connect();
-                    DBController controller = new DBController(conn);
+                    dbController controller = new dbController(conn);
                     controller.insertFromAPI(textField3.getText(),textField4.getText(),textField5.getText(),textField6.getText(),textField7.getText());
                     resultPanel.setText("Se han ingresado los datos correctamente.");
                     conn.close();
