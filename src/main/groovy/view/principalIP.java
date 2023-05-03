@@ -1,4 +1,4 @@
-package View;
+package view;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -15,7 +15,7 @@ public class PrincipalP {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("DB Filter");
-                frame.setContentPane(new DBFilter().panel1);
+                frame.setContentPane(new dbFilter().panel1);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
             }
